@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice generator app solution
+# Frontend Mentor - Advice generator solution
 
 This is a solution to the [Advice generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
