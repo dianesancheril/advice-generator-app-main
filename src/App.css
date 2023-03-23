@@ -1,24 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Quicksand:wght@300;400;600&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 :root {
   --cyan:hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-blue: hsl(218, 23%, 16%);
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color:var(--dark-grayish-blue);
-  width: 100%;
-  height: 100%;
-  margin: 50% auto;
+  --ff: 'Quicksand', sans-serif;
 }
 
 body {
   background-color:var(--dark-blue);
+}
+
+.flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color:var(--dark-grayish-blue);
+  width: 400px;
+  margin: 250px auto;
+  padding: 30px 20px 0px 20px;
   align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.flex-item {
+  display: flex;
+  text-align: center;
+}
+
+.advice-id {
+  color:var(--neon-green);
+  letter-spacing: 2px;
+  font-size: 0.5rem;
+}
+
+.advice {
+  color:var(--cyan);
+  font-weight: 600;
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+.divider {
+  width: 400px;
+}
+
+.dice-button {
+  background-color: var(--neon-green);
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+}
+
+.dice-button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 15px 1px var(--neon-green);
+}
+
+@media screen and (max-width:400px) {
+  .flex-container {
+    width: 300px;
+    margin: 150px auto;
+  }
 }
